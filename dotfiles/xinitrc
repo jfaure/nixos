@@ -1,0 +1,17 @@
+# Setup dbus daemon
+#if test -z "$DBUS_SESSION_BUS_ADDRESS"; then
+#	eval $(dbus-launch --exit-with-session --sh-syntax) fi
+#systemctl --user import-environment DISPLAY XAUTHORITY
+#if command -v dbus-update-activation-environment >/dev/null 2>&1; then
+#        dbus-update-activation-environment DISPLAY XAUTHORITY fi
+
+xrandr --output eDP-1 --mode 1400x900 --output HDMI-3 --above eDP-1 --output HDMI-1 --below eDP-1
+feh --bg-fill /home/jamie/Backgrounds/random-pond.png
+compton &
+pasystray &
+nm-applet &
+xset r rate 200 130
+fcitx5 &
+blueman-applet &
+xsetroot -cursor_name Left_ptr
+exec xmonad
