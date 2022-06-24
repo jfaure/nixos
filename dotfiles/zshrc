@@ -1,28 +1,3 @@
-set -o vi
-alias v=vim
-export PS1="%F{green}%~> %F{reset_color}"
-alias la="l -a" ls="ls --color=auto"
-alias t=tree tree="tree -C"
-alias mk="make -j"
-alias vf='vim -c Files'
-alias ..='cd ..' ...='cd ...'
-alias rg='rg -S' # smartcase
-alias lg='lazygit'
-alias ns='nix-shell --command zsh'
-source ~/.zshrc
-
-#function c() {
-#  [[ "$#" != 0 ]] && { builtin cd "$@"; return }
-#  while true; do
-#    local lsd=$(echo ".." && ls -p | rg '/$' | sed 's;/$;;')
-#    local dir="$(printf '%s\n' "$(lsd[@])" |
-#      fzf --reverse --preview '
-#          __cd_nxt="$(echo {})";
-#          __cd_path="$(echo $(pwd)/$(__cd_nxt) | sed "s;//;/;")";
-#          echo $__cd_path; echo
-#          ls -p --color=always "$(__cd_path)";
-#      ')"
-#      [[ $(#dir) != 0 ]] || return 0
-#      builtin cd "$dir" &> /dev/null
-#  done
-#}
+export PATH=$PATH:~/bin/
+alias cery=arya
+alias figurine="sed 'y/KQRBNP/♔♕♖♗♘♙/' <<<"
