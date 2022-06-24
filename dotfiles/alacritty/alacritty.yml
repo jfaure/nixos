@@ -1,0 +1,21 @@
+live_config_reload: false # requires restart
+#background_opacity: 0.9
+window:
+ opacity: 0.9
+dimensions:
+  columns: 80
+dynamic_title: true
+#class:
+# instance: Alacritty
+# general: Alacritty
+history: 10000
+font:
+  size: 16
+unfocused_hollow: true # hollow box cursor on unfocus
+double_click: { threshold: 300 }
+triple_click: { threshold: 300 }
+#hide_when_typing: True
+# terminal hints can be used to find text in visible parts of terminal and pipe to other applications
+#hints:
+#debug:
+# render_timer: true
